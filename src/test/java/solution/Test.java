@@ -23,6 +23,9 @@ public class Test {
         digits = new Integer[]{1, 0, 1, 2};
         Test.Check(solution.letterCombinations(digits), Arrays.asList("A", "B", "C"));
 
+        digits = new Integer[]{23};
+        Test.Check(solution.letterCombinations(digits), Arrays.asList("AD", "AE", "AF", "BD", "BE", "BF", "CD", "CE", "CF"));
+
     }
 
     public static void Check(List<String> src, List<String> match) throws Exception {
